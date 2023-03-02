@@ -19,7 +19,7 @@ function App() {
 
   const API = { get }
 
-  function get(url) {
+  function get(url: RequestInfo | URL) {
     return fetch(url).then(resp =>
       resp.json())
   }
